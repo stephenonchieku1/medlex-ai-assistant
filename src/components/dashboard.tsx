@@ -1,7 +1,6 @@
 import { useState, useEffect } from "react";
 
 import {
-  languages,
   clarityLevels,
   type UserSettings,
 } from "./settings/options";
@@ -248,13 +247,6 @@ export default function Dashboard() {
       setIsLoadingMedInfo(false);
     }
   };
-
-  const filteredLanguages =
-    languageQuery === ""
-      ? languages
-      : languages.filter((language) =>
-          language.name.toLowerCase().includes(languageQuery.toLowerCase())
-        );
 
   return (
     <div className="bg-gray-100 text-gray-900 ">
