@@ -16,7 +16,10 @@ export default defineConfig({
   ],
 
   output: "server",
-  adapter: vercel(),
+  adapter: vercel({
+    functionPerRoute: false,  
+    runtime: "nodejs18.x",
+  }),
   vite: {
     ssr: {
       noExternal: ["react-dropzone"],
