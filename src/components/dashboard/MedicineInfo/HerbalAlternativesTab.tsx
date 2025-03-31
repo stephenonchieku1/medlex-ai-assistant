@@ -11,16 +11,6 @@ export default function HerbalAlternativesTab({
   herbalData,
   handleSpeak,
 }: TabContentProps) {
-  const analysisData = (() => {
-    try {
-      return typeof herbalData?.analysis === "string"
-        ? JSON.parse(herbalData.analysis)
-        : herbalData?.analysis || null;
-    } catch (error) {
-      return null;
-    }
-  })();
-
   return (
     <div className="space-y-4">
       <div className="flex items-start justify-between">
