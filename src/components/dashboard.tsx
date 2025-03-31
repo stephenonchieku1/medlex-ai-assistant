@@ -133,7 +133,6 @@ export default function Dashboard() {
     labels: string[];
   } | null>(null);
   const [isLoadingMedInfo, setIsLoadingMedInfo] = useState(false);
-  const [isLoading, setIsLoading] = useState(false);
   const [fdaData, setFdaData] = useState<any>(null);
   const [sideEffectData, setSideEffectData] = useState<any>(null);
 

@@ -1,4 +1,4 @@
-import { Pill, Settings, X,HeartPulse ,CircleUserRound } from "lucide-react";
+import { Settings, X, HeartPulse, CircleUserRound } from "lucide-react";
 
 interface HeaderProps {
   isSettingsOpen: boolean;

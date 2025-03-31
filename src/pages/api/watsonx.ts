@@ -126,8 +126,7 @@ export const POST: APIRoute = async ({ request }) => {
 
     const buildPrompt = (
       medicineInfo: any,
-      sideEffects: string,
-      userSettings: string = ""
+      sideEffects: string
     ) => {
       const sections = [];
 
@@ -196,8 +195,7 @@ Output:`;
     const sideEffects = formatSideEffects(sideEffectData);
     const formattedPrompt = buildPrompt(
       medicineInfo,
-      sideEffects,
-      userSettings
+      sideEffects
     );
 
     // Only proceed if we have at least some meaningful data

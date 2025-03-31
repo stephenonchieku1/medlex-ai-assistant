@@ -1,10 +1,8 @@
-import { Volume2 } from "lucide-react";
 import type { TabContentProps } from "@/types/ibm";
 import TabSkeleton from "./TabSkeleton";
 
 export default function IngredientsTab({
   fdaData,
-  handleSpeak,
   isLoading,
 }: TabContentProps) {
   if (isLoading) {

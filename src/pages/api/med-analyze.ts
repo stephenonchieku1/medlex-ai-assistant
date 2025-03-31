@@ -1,7 +1,6 @@
 export const prerender = false;
 import type { APIRoute } from "astro";
 import { GoogleGenerativeAI } from "@google/generative-ai";
-import fs from "fs";
 
 const genAI = new GoogleGenerativeAI(import.meta.env.GEMINI_API_KEY);
 const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
@@ -23,7 +22,7 @@ export const POST: APIRoute = async ({ request }) => {
     };
 
     const result = await model.generateContent([prompt, image]);
-    const response = await result.response;
+    const response = result.response;
     const brand_name = response.text().trim();
 
     return new Response(JSON.stringify({ brand_name }), {

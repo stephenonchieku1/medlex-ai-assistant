@@ -2,14 +2,7 @@ import { Volume2 } from "lucide-react";
 import type { TabContentProps } from "@/types/ibm";
 import TabSkeleton from "./TabSkeleton";
 
-interface SideEffects {
-  common: string[];
-  serious: string[];
-  rare: string[];
-}
-
 export default function SideEffectsTab({
-  fdaData,
   sideEffectData,
   handleSpeak,
   isLoading,

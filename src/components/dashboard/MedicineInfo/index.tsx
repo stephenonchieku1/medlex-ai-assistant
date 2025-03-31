@@ -1,5 +1,5 @@
 import { Tab, TabList, TabPanel, TabPanels, TabGroup } from "@headlessui/react";
-import { Volume2, AlertTriangle, Info, Leaf, Pill } from "lucide-react";
+import { AlertTriangle, Info, Leaf, Pill } from "lucide-react";
 import OverviewTab from "./OverviewTab";
 import IngredientsTab from "./IngredientsTab";
 import SideEffectsTab from "./SideEffectsTab";
@@ -7,8 +7,6 @@ import HerbalAlternativesTab from "./HerbalAlternativesTab";
 import type { MedicineInfoProps } from "@/types/ibm";
 
 export default function MedicineInfo({
-  selectedMedicine,
-  imgAnalyzed,
   fdaData,
   sideEffectData, // This contains both sideEffects and herbalAlternatives
   handleSpeak,

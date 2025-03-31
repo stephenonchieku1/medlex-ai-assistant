@@ -8,7 +8,6 @@ interface HerbalOption {
 }
 
 export default function HerbalAlternativesTab({
-  fdaData,
   herbalData,
   handleSpeak,
 }: TabContentProps) {

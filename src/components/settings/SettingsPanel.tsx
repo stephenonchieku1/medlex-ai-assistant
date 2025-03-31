@@ -245,13 +245,12 @@ The user requested that you use ${clarity.label.toLowerCase()} clarity level wit
                     <ListboxOption
                       key={age.id}
                       value={age}
-                      className={({ active, selected }) => `
+                      className={({ selected }) => `
                       relative cursor-pointer select-none py-2 pl-10 pr-4
-                      ${active ? "bg-blue-50 text-blue-700" : "text-gray-700"}
-                      ${selected ? "bg-blue-50" : ""}
+                      ${selected ? "bg-blue-50 text-blue-700" : "text-gray-700"}
                     `}
                     >
-                      {({ selected, active }) => (
+                      {({ selected }) => (
                         <>
                           <span
                             className={`block truncate ${
@@ -263,7 +262,7 @@ The user requested that you use ${clarity.label.toLowerCase()} clarity level wit
                           {selected ? (
                             <span
                               className={`absolute inset-y-0 left-0 flex items-center pl-3
-                              ${active ? "text-blue-600" : "text-blue-500"}`}
+                              ${selected ? "text-blue-600" : "text-blue-500"}`}
                             >
                               <Check className="h-5 w-5" aria-hidden="true" />
                             </span>

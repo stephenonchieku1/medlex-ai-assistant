@@ -5,7 +5,6 @@ import { speakText } from "@/utils/textToSpeech";
 
 export default function OverviewTab({
   fdaData,
-  handleSpeak,
   isLoading,
 }: TabContentProps) {
   if (isLoading) {
