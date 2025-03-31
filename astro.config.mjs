@@ -16,7 +16,7 @@ export default defineConfig({
     alpinejs({ entrypoint: "/src/entrypoint" }),
   ],
 
-  output: "hybrid",
+  output: "server",
   adapter: vercel(),
   vite: {
     ssr: {
